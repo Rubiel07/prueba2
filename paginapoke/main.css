@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(178, 231, 245);
+    color: white;
+    margin: 40px;
+    font-family: rubik;
+}
+
+.container {
+    padding: 40px;
+    margin:  auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+}
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.card {
+    list-style: none;
+    padding: 40px;
+    background-color: whitesmoke;
+    color: #222;
+     text-align: center;
+     border-radius: 20px;
+}
+
+.card:hover {
+    animation: bounce 0.5s linear;
+    cursor: pointer;
+}
+
+.card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+}
+.card-subtitle {
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+}
+
+.card-img {
+    height: 180px;
+    border-radius: 100%;
+    background-color: #d7e2df;
+    
+}
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.popup{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vw;
+    width: 100vw;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+#closeBtn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+button{
+    background: ;
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: transform 100ms;
+}
+
+button:hover{
+    cursor:pointer;
+    transform: translateY(-1px);
+    box-shadow:  0px 1px 2px blue;
+}
+
+
+
+
